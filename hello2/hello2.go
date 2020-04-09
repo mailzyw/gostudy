@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/mailzyw/gostudy/hello2/helloutil"
+	)
 
 func main() {
-	fmt.Printf("Hello,world.\n")
+	helloutil.PrintHello("Hello,world.\n")
+	helloutil.PrintHello("Hello,world2.\n")
+	i := 10
+	j := 100
+	fmt.Printf("Hello,world3.%d\n",i)
+	fmt.Printf("Hello,world4.%d\n",j)
 }
