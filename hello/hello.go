@@ -1,10 +1,10 @@
 package main
 
-import(
-    "fmt"
-    "github.com/mailzyw/gostudy/stringutil"
+import (
+	"fmt"
+	"github.com/mailzyw/gostudy/stringutil"
 )
 
-func main(){
-    fmt.Printf(stringutil.Reverse("!oG,olleH"))
+func main() {
+	fmt.Printf(stringutil.Reverse("!oG,olleH"))
 }
