@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/mailzyw/gostudy/stringutil"
+	"stringutil"
 )
 
 func main() {
