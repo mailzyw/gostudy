@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"hello2/helloutil"
+	"github.com/mailzyw/gostudy/src/hello2/helloutil"
 )
 
 func main() {
