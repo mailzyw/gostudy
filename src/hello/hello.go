@@ -2,21 +2,38 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"github.com/mailzyw/gostudy/src/stringutil"
+	"os"
 )
 
 //the main func
 func main() {
-	fmt.Println(stringutil.Reverse("!oG,olleH"))
-	fmt.Println(Func1(100))
+	file, err := os.Open("products.txt")
+	if err!=nil{
+		fmt.Printf("open file error")
+		return
+	}
+	defer file.Close()
+
+	iReader := bufio.NewReader(file)
+	for{
+		str,err := iReader.ReadString('\n')
+		if err != nil{
+			return
+		}
+		fmt.Printf("The input was : %s",str)
+	}
+
 }
 
-//func1 to print num
-func Func1(i int) int {
-	fmt.Println("num is %d", i)
-	return i + 100
-}
 
-//func FunctionName(a typea, b typeb)(t1 type1, t2 type2)
-//type IZ int
+
+
+
+
+
+
+
+
+
